@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faHeart, faGraduationCap, faBuildingColumns, faAward, faBug } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faHeart, faGraduationCap, faBuildingColumns, faAward, faBug } from '@fortawesome/free-solid-svg-icons'
 
 export default function About() {
     return (

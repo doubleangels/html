@@ -1,15 +1,10 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-
-// import required modules
-import { Pagination } from 'swiper';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAndroid, faGooglePlay, faGithub, faLinux, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import "swiper/css"
+import "swiper/css/pagination"
+import { Pagination } from 'swiper'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAndroid, faGooglePlay, faGithub, faLinux, faMicrosoft } from '@fortawesome/free-brands-svg-icons'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
 
 export default function Portfolio() {
     return (
@@ -20,7 +15,7 @@ export default function Portfolio() {
                 <br />
                 <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
                     <SwiperSlide>
-                        <div className="swiper-slide portfolio-item">
+                        <div className="portfolio-item">
                             <div>
                                 <h3>NextDNS Manager</h3>
                                 <p><FontAwesomeIcon className="padding-right-20" icon={faAndroid} />A
