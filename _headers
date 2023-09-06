@@ -14,7 +14,7 @@ https://home.doubleangels.com/*
   X-Robots-Tag: noindex
 
 https: //octoprint.doubleangels.com/*
-  -Robots-Tag: noindex
+  X-Robots-Tag: noindex
 
 https://portainer.doubleangels.com/*
   X-Robots-Tag: noindex
