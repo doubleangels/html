@@ -131,7 +131,7 @@ export default function About() {
                         <ul className="skill-bars">
                             <li>
                                 <div className="progress percent99"><span>99%</span></div>
-                                <strong className="resize-strong">Problem Solving and Troubleshooting</strong>
+                                <strong className="resize-strong">Problem Solving</strong>
                             </li>
                             <li>
                                 <div className="progress percent99"><span>99%</span></div>
