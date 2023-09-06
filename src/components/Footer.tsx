@@ -1,5 +1,3 @@
-import '/src/js/index.js'
-
 export default function Footer() {
     return (
         <>
