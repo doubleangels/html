@@ -5,14 +5,11 @@ const GithubRepoCount: React.FC = () => {
   const repoCountRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    // Define the GitHub API URL for the user's repositories
     const apiUrl = 'https://api.github.com/users/doubleangels/repos';
 
-    // Fetch the user's repositories from the GitHub API
     fetch(apiUrl)
       .then(response => response.json())
       .then(data => {
-        // Calculate the number of public repositories
         const publicRepos = data.filter((repo: any) => !repo.private);
         setRepoCount(publicRepos.length);
       })
@@ -22,7 +19,6 @@ const GithubRepoCount: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    // Update the <div> with the id "repocount" in the DOM
     if (repoCountRef.current !== null) {
         repoCountRef.current.textContent = `${repoCount}`;
     }
