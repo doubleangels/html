@@ -23,7 +23,7 @@ export default function Contact() {
                     </div>
                     <div className="col-four tab-full">
                         <h5>Call/text me:</h5>
-                        <a href="tel:7205158922" aria-label="Call me"><FontAwesomeIcon className="white-2x" icon={faPhone} /></a>
+                        <a href="tel:7202950463" aria-label="Call me"><FontAwesomeIcon className="white-2x" icon={faPhone} /></a>
                     </div>
                 </div>
             </section>
