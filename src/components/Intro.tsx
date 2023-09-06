@@ -1,13 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import AnimationComponent from './Animation'
 
 export default function Intro() {
     return (
         <>
         <section id="intro">
             <div id="canvas-wrap">
-                <canvas id="animation"></canvas>
+                <AnimationComponent />
                 <div id="overlay" className="intro-overlay"></div>
                 <div id="overlay" className="intro-content">
                     <h5>Hello, World.</h5>
