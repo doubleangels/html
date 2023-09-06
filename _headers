@@ -1,5 +1,6 @@
 /*
   Access-Control-Allow-Origin: *
+  Referrer-Policy: unsafe-url
 
 /img/*
   Cache-Control: max-age=31536000
@@ -13,10 +14,10 @@ https://home.doubleangels.com/*
   X-Robots-Tag: noindex
 
 https: //octoprint.doubleangels.com/*
-X-Robots-Tag: noindex
+  -Robots-Tag: noindex
 
 https://portainer.doubleangels.com/*
   X-Robots-Tag: noindex
 
 https://uptime.doubleangels.com/*
-  X-Robots-Tag: noindexs
+  X-Robots-Tag: noindex
