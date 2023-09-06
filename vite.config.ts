@@ -7,6 +7,6 @@ export default defineConfig({
   plugins: [
     react(),
     compression(),
-    compression({ algorithm: 'brotliCompress' })
+    compression({ algorithm: 'brotliCompress', exclude: [/\.(br)$/, /\.(gz)$/], deleteOriginalAssets: true })
   ],
 })
