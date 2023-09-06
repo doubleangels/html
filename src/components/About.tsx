@@ -131,10 +131,6 @@ export default function About() {
                         <ul className="skill-bars">
                             <li>
                                 <div className="progress percent99"><span>99%</span></div>
-                                <strong className="resize-strong">Technical Proficiency</strong>
-                            </li>
-                            <li>
-                                <div className="progress percent99"><span>99%</span></div>
                                 <strong className="resize-strong">Problem Solving and Troubleshooting</strong>
                             </li>
                             <li>
@@ -142,12 +138,28 @@ export default function About() {
                                 <strong className="resize-strong">Communication Skills</strong>
                             </li>
                             <li>
-                                <div className="progress percent85"><span>99%</span></div>
+                                <div className="progress percent99"><span>99%</span></div>
                                 <strong className="resize-strong">Adaptability</strong>
                             </li>
                             <li>
-                                <div className="progress percent85"><span>99%</span></div>
-                                <strong className="resize-strong">Customer Service and Empathy</strong>
+                                <div className="progress percent99"><span>99%</span></div>
+                                <strong className="resize-strong">Technical Proficiency</strong>
+                            </li>
+                            <li>
+                                <div className="progress percent99"><span>99%</span></div>
+                                <strong className="resize-strong">Security Practices</strong>
+                            </li>
+                            <li>
+                                <div className="progress percent85"><span>85%</span></div>
+                                <strong className="resize-strong">Network Architecture</strong>
+                            </li>
+                            <li>
+                                <div className="progress percent75"><span>75%</span></div>
+                                <strong className="resize-strong">Virtualization</strong>
+                            </li>
+                            <li>
+                                <div className="progress percent75"><span>75%</span></div>
+                                <strong className="resize-strong">Full Stack Development</strong>
                             </li>
                         </ul>
                     </div>
