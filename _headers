@@ -1,8 +1,6 @@
 /*
   Access-Control-Allow-Origin: *
   Referrer-Policy: origin
-  X-Frame-Options: DENY
-  X-Content-Type-Options: nosniff
 
 /img/*
   Cache-Control: max-age=31536000
