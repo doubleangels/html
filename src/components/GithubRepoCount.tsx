@@ -24,11 +24,7 @@ const GithubRepoCount: React.FC = () => {
   useEffect(() => {
     // Update the <div> with the id "repocount" in the DOM
     if (repoCountRef.current !== null) {
-      if (repoCount === null) {
-        repoCountRef.current.textContent = 'Loading...';
-      } else {
         repoCountRef.current.textContent = `${repoCount}`;
-      }
     }
   }, [repoCount]);
 
