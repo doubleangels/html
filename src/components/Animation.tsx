@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const AnimationComponent: React.FC = () => {
+const Animation: React.FC = () => {
   useEffect(() => {
     const canvas = document.getElementById("animation") as HTMLCanvasElement;
     const ctx = canvas.getContext("2d");
@@ -165,4 +165,4 @@ const AnimationComponent: React.FC = () => {
   );
 };
 
-export default AnimationComponent;
+export default Animation;

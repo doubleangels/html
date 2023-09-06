@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faHeart, faGraduationCap, faBuildingColumns, faAward, faBug } from '@fortawesome/free-solid-svg-icons'
+import GithubRepoCount from './GithubRepoCount'
 
 export default function About() {
     return (
@@ -61,7 +62,7 @@ export default function About() {
                                         <FontAwesomeIcon icon={faGithub} />
                                     </div>
                                     <div>
-                                        <span id="publicprojects"></span>
+                                        <GithubRepoCount />
                                     </div>
                                     <div className="hidemobile">
                                         Repos
