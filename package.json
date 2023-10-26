@@ -23,7 +23,7 @@
     "swiper": "^11.0.2"
   },
   "devDependencies": {
-    "@types/react": "^18.2.32",
+    "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.14",
     "@types/react-fontawesome": "^1.6.7",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
