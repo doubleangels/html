@@ -5,7 +5,6 @@ const GithubRepoCount: React.FC = () => {
   const repoCountRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    // Define the GitHub API URL for the user's repositories
     const apiUrl = 'https://api.github.com/users/doubleangels/repos';
 
     const fetchData = async () => {
@@ -30,7 +29,6 @@ const GithubRepoCount: React.FC = () => {
   }, [apiData]);
 
   useEffect(() => {
-    // Update the <div> with the id "repocount" in the DOM
     if (repoCountRef.current !== null) {
       repoCountRef.current.textContent = `${repoCount}`;
     }

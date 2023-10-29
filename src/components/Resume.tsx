@@ -8,7 +8,6 @@ const resumeData = [
     responsibilities: [
       'Created, prototyped, tested, and implemented real-time file sharing software systems...',
       'Developed a privacy-focused, highly-rated Android application...',
-      // Add other responsibilities
     ],
   },
   {
@@ -18,10 +17,8 @@ const resumeData = [
     responsibilities: [
       'Proactively monitored and analyzed security alerts and events...',
       'Conducted regular and comprehensive vulnerability assessments...',
-      // Add other responsibilities
     ],
   },
-  // Add other resume entries
 ];
 
 export default function Resume() {
