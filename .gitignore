@@ -133,28 +133,7 @@ dist
 .env.sentry-build-plugin
 
 # Sentry Config File
-.env.sentry-build-plugin
-
-# Sentry Config File
 .sentryclirc
 
-# Sentry Config File
-.env.sentry-build-plugin
-
-# Sentry Config File
-.env.sentry-build-plugin
-
-# Sentry Config File
-.sentryclirc
-
-# Sentry Config File
-.env.sentry-build-plugin
-
-# Sentry Config File
-.env.sentry-build-plugin
-
-# Sentry Config File
-.env.sentry-build-plugin
-
-# Sentry Config File
-.env.sentry-build-plugin
+# VSCode config file
+.vscode/
