@@ -20,6 +20,9 @@ jobs:
         with:
           node-version: "21.1.0"
 
+      - name: Install dependencies
+        run: npm install
+
       - name: Build
         id: build
         run: npm run build
