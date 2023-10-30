@@ -21,7 +21,7 @@ export default function Intro() {
                 </div>
                 <ul className="intro-social">
                     <li>
-                        <a href="https://github.com/mtverlee" aria-label="View my Github profile">
+                        <a href="https://github.com/doubleangels" aria-label="View my Github profile">
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
                     </li>
