@@ -1,17 +1,16 @@
-name: Deploy to Cloudflare Pages
+name: Test dependabot pull request
 
 on:
-  push:
-    branches: ["main"]
+  pull_request:
+    branches: ["dependabot/**"]
   workflow_dispatch:
 
 jobs:
-  publish:
+  test-build:
     runs-on: ubuntu-latest
     env:
       SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
 
-    name: Build and deploy
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,12 +26,3 @@ jobs:
       - name: Build
         id: build
         run: npm run build
-
-      - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
-        if: steps.build.outcome == 'success'
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID}}
-          projectName: html
-          directory: dist
