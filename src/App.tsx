@@ -2,10 +2,10 @@ import{ Suspense, lazy } from 'react';
 import * as Sentry from "@sentry/react";
 
 Sentry.init({
-  dsn: "https://0a4368d2d941613bda14abf6bca642ae@o244019.ingest.sentry.io/4506085004083200",
+  dsn: "https://d633d2a6f2122f358814f236f4ee06d2@o244019.ingest.sentry.io/4506165444739072",
   integrations: [
     new Sentry.BrowserTracing({
-      tracePropagationTargets: ["localhost", /^https:\/\/doubleangels\.com\//],
+      tracePropagationTargets: ["localhost", /^https:\/\/yourserver\.io\/api/],
     }),
     new Sentry.Replay(),
   ],
