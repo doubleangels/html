@@ -14,7 +14,6 @@ export default defineConfig({
       project: "html"
     })
   ],
-
   build: {
     sourcemap: true
   }
