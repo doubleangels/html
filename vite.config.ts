@@ -12,7 +12,7 @@ export default defineConfig({
     sentryVitePlugin({
       org: "doubleangels",
       project: "html"
-    }),
+    })
   ],
 
   build: {
