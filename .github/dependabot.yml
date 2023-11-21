@@ -5,8 +5,6 @@ updates:
     schedule:
       interval: "weekly"
     target-branch: "dev"
-    labels:
-      - "dependabot"
     assignees:
       - "doubleangels"
     reviewers:
