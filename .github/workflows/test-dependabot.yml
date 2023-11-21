@@ -1,4 +1,4 @@
-name: Test dependabot pull request
+name: Handle dependabot pull request
 
 on:
   pull_request:
@@ -39,3 +39,30 @@ jobs:
 
       - name: Build
         run: npm run build
+
+  accept-pr:
+    runs-on: ubuntu-latest
+    if: ${{ needs.test-build.outcome == 'success' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Approve a PR if not already approved
+        run: |
+          gh pr checkout "$PR_URL"
+            if [ "$(gh pr status --json reviewDecision -q .currentBranch.reviewDecision)" != "APPROVED" ];
+          then
+            gh pr review --approve "$PR_URL"
+          else
+            echo "PR already approved.";
+          fi
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Auto-merge dependabot PR's
+        if: ${{ contains(github.event.pull_request.title, 'bump')}}
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{secrets.RELEASE_TOKEN}}
