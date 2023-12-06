@@ -1,12 +1,12 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useMemo } from 'react';
 
 const GithubRepoCount: React.FC = () => {
   const [repoCount, setRepoCount] = useState<number | null>(null);
   const repoCountRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    const apiUrl = 'https://api.github.com/users/doubleangels/repos';
+  const apiUrl = useMemo(() => 'https://api.github.com/users/doubleangels/repos', []);
 
+  useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch(apiUrl);
@@ -23,15 +23,9 @@ const GithubRepoCount: React.FC = () => {
     };
 
     fetchData();
-  }, []);
+  }, [apiUrl]);
 
-  useEffect(() => {
-    if (repoCount !== null && repoCountRef.current !== null) {
-      repoCountRef.current.textContent = `${repoCount}`;
-    }
-  }, [repoCount]);
-
-  return <div id="repocount" ref={repoCountRef}></div>;
+  return <div id="repocount" ref={repoCountRef}>{repoCount !== null && repoCount}</div>;
 };
 
 export default GithubRepoCount;
