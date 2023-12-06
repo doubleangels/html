@@ -40,22 +40,42 @@ export default function About() {
           <div className="col-twelve">
             <div className="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full">
               {[
-                { icon: faHeart, text: 'Passion' },
-                { icon: faGraduationCap, text: 'Degree' },
-                { icon: faBuildingColumns, text: 'Learning' },
-                {
-                  icon: faGithub,
-                  text: 'Repos',
-                  content: <GithubRepoCount />,
+                { 
+                    icon: faHeart, 
+                    text: 'Passion', 
+                    content: 1,
                 },
-                { icon: faAward, text: 'Certs' },
-                { icon: faBug, text: 'Bugs' },
+                { 
+                    icon: faGraduationCap, 
+                    text: 'Degree',
+                    content: 1,
+                },
+                { 
+                    icon: faBuildingColumns, 
+                    text: 'Learning', 
+                    content: <span>&#8734;</span>
+                },
+                {
+                    icon: faGithub,
+                    text: 'Repos',
+                    content: <GithubRepoCount />,
+                },
+                { 
+                    icon: faAward, 
+                    text: 'Certs',
+                    content: 6,
+                },
+                { 
+                    icon: faBug, 
+                    text: 'Bugs',
+                    content: 0,
+                },
               ].map((item, index) => (
                 <div className="bgrid whitetext" key={index}>
                   <div>
                     <FontAwesomeIcon icon={item.icon} />
                   </div>
-                  <div>{item.content || <span>1</span>}</div>
+                  <div>{item.content}</div>
                   <div className="hidemobile">{item.text}</div>
                   <br />
                 </div>
