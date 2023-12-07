@@ -105,7 +105,7 @@ export default function About() {
           <h3>Skills</h3>
           <p>Throughout my career, I have acquired valuable skills through continuous learning and professional development. Here are some highlights.</p>
           <ul className="skill-bars">
-            {skillsData.map((skill, index) => (
+            {skillsData.map((skill) => (
               <li key={skill.text}>
                 <div className={`progress percent${skill.percent}`}>
                   <span>{`${skill.percent}%`}</span>

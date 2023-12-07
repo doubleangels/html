@@ -2,8 +2,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAndroid, faGooglePlay, faGithub, faLinux, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { faAndroid, faGithub, faLinux, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
