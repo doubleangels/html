@@ -6,7 +6,7 @@ updates:
       interval: "weekly"
     target-branch: "main"
     commit-message:
-      preview: "[NPM]"
+      prefix: "[NPM]"
     reviewers:
       - "doubleangels"
   
