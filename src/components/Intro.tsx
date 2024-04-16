@@ -25,13 +25,13 @@ export default function Intro() {
             <li key={index}>
               <a href={item.link} aria-label={item.label}>
                 {item.id === 'github' && (
-                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon icon={faGithub} size="lg" />
                 )}
                 {item.id === 'email' && (
-                  <FontAwesomeIcon icon={faEnvelope} />
+                  <FontAwesomeIcon icon={faEnvelope} size="lg" />
                 )}
                 {item.id === 'phone' && (
-                  <FontAwesomeIcon icon={faPhone} />
+                  <FontAwesomeIcon icon={faPhone} size="lg" />
                 )}
               </a>
             </li>

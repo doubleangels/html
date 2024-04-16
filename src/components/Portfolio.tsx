@@ -28,7 +28,7 @@ const Portfolio = () => {
                   <p>
                     <center>
                       <a href={project.link} aria-label="GitHub">
-                        <FontAwesomeIcon className="black-portfolio" icon={faGithub} />
+                        <FontAwesomeIcon className="black" icon={faGithub} size="2x" />
                       </a>
                     </center>
                   </p>

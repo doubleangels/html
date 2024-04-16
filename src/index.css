@@ -1609,14 +1609,10 @@ h5 {
   padding-right: 20px
 }
 
-.white-2x {
+.white {
   color: #fff;
-  width: 10%;
-  height: 10%
 }
 
-.black-portfolio {
+.black {
   color: #000;
-  width: 2.5%;
-  height: 2.5%
 }
