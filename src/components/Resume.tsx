@@ -7,7 +7,7 @@ export default function Resume() {
       <div className="row section-intro">
         <div className="col-twelve resume-header">
           <h1>Resume</h1>
-          <h2>Throughout my career, I have had the privilege of working on a variety of impactful projects...</h2>
+          <h2>Throughout my career, I have had the privilege of working on a variety of impactful projects.</h2>
         </div>
       </div>
       <div className="row resume-timeline">
