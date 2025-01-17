@@ -20,6 +20,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-fontawesome": "^1.7.1",
+    "react-ga4": "^2.1.0",
     "swiper": "^11.1.15"
   },
   "devDependencies": {

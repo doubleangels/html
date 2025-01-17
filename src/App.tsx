@@ -1,14 +1,5 @@
 import { Suspense, lazy } from 'react';
-import * as Sentry from "@sentry/react";
 import Intro from './components/Intro';
-
-Sentry.init({
-  dsn: "https://d633d2a6f2122f358814f236f4ee06d2@o244019.ingest.sentry.io/4506165444739072",
-  integrations: [Sentry.browserTracingIntegration()],
-  tracesSampleRate: 1.0,
-  replaysSessionSampleRate: 1.0,
-  replaysOnErrorSampleRate: 1.0,
-});
 
 const LazyAbout = lazy(() => import('./components/About'));
 const LazyResume = lazy(() => import('./components/Resume'));
