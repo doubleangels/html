@@ -1,0 +1,32 @@
+[
+    {
+        "job": "Cyber Security Analyst",
+        "date": "April 2022 - June 2023",
+        "company": "Open Raven (Los Angeles, CA, USA)",
+        "responsibilities": [
+            "Designed and implemented robust security measures to protect critical systems, networks, and data from cyber threats.",
+            "Led investigations into security incidents, pinpointing root causes and providing actionable recommendations to prevent recurrence.",
+            "Performed vulnerability assessments and penetration tests, uncovering system weaknesses and driving targeted security improvements."
+        ]
+    },
+    {
+        "job": "Technical Support Analyst III",
+        "date": "January 2022 - April 2022",
+        "company": "ACLU (Denver, CO, USA)",
+        "responsibilities": [
+            "Collaborated with cross-functional teams to resolve complex technical challenges, ensuring seamless operations.",
+            "Created comprehensive technical documentation (FAQs, knowledge base, troubleshooting guides) to streamline support processes and promote user self-help.",
+            "Analyzed escalated technical issues, identified root causes, and implemented solutions to minimize downtime and optimize system performance."
+        ]
+    },
+    {
+        "job": "Freelance Developer",
+        "date": "November 2016 - Present",
+        "company": "Self-Employed (CO, USA)",
+        "responsibilities": [
+            "Designed custom software solutions tailored to user needs, enhancing functionality and user experience.",
+            "Developed a privacy-focused Android app with 4+ star rating and 125K+ downloads, demonstrating user satisfaction and market success.",
+            "Prototyped, tested, and deployed a real-time file-sharing system across multiple locations, boosting collaboration and efficiency."
+        ]
+    }
+]
