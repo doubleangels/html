@@ -12,14 +12,6 @@ export default defineConfig({
       org: "doubleangels",
       project: "html"
     }),
-    sentryVitePlugin({
-      org: "doubleangels",
-      project: "html"
-    }),
-    sentryVitePlugin({
-      org: "doubleangels",
-      project: "html"
-    })
   ],
   build: {
     sourcemap: true
