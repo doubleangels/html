@@ -1,7 +1,7 @@
 import { Suspense, lazy } from 'react';
 import Intro from './components/Intro';
 import { Analytics } from "@vercel/analytics/react"
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const LazyAbout = lazy(() => import('./components/About'));
 const LazyResume = lazy(() => import('./components/Resume'));
@@ -19,6 +19,7 @@ function App() {
       <LazyContact />
       <LazyFooter />
       <Analytics />
+      <SpeedInsights />
     </Suspense>
   );
 }
