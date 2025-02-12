@@ -8,8 +8,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import GithubRepoCount from './GithubRepoCount';
 import Stat from '../components/Stat';
-import skillsData from '../json/skillsData.json';
-import certificationsData from '../json/certificationsData.json';
+import { skillsData } from './data.tsx';
+import { certificationsData } from './data.tsx';
 
 export default function About() {
   return (

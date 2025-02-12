@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import AnimationComponent from './Animation';
-import socialData from '../json/socialData.json';
+import { socialData } from './data';
 
 export default function Intro() {
   return (

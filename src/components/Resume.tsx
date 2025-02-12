@@ -1,5 +1,5 @@
 import ResumeItem from "./ResumeItem";
-import resumeData from "../json/resumeData.json";
+import { resumeData } from "./data.tsx";
 
 export default function Resume() {
   return (
