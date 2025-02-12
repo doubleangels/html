@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import contactData from '../json/contactData.json';
+import { contactData } from './data.tsx';
 
 export default function Contact() {
   return (

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import projectData from '../json/projectData.json';
+import { projectData } from './data';
 
 const Portfolio = () => {
   const swiperConfig = {
