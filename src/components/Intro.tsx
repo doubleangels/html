@@ -14,7 +14,7 @@ export default function Intro() {
           <h5>Hello, World.</h5>
           <h1>I'm Matt.</h1>
           <p className="intro-position">
-            <span>Developer | Administrator | Student</span>
+            <span>I make things happen with bits and bytes.</span>
           </p>
           <a className="button stroke" href="#about" title="Meet Me!">
             Meet Me!
