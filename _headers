@@ -1,7 +1,0 @@
-/*
-  Access-Control-Allow-Origin: *
-
-/img/*
-  Cache-Control: max-age=31536000
-  Cache-Control: public
-  X-Robots-Tag: noindex
