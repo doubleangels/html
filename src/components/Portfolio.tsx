@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { projectData } from './data';
+import { data } from './data';
 
 const Portfolio = () => {
   const swiperConfig = {
@@ -15,11 +15,11 @@ const Portfolio = () => {
   return (
     <>
       <section className="portfolio" id="portfolio">
-        <h1 className="portfolio">Projects</h1>
-        <h2 className="protfolio-title">Here are a few examples of my work.</h2>
+        <h1 className="portfolio">{data.portfolioData.portfolioTitle}</h1>
+        <h2 className="protfolio-title">{data.portfolioData.portfolioDescription}</h2>
         <br />
         <Swiper {...swiperConfig} className="mySwiper">
-          {projectData.map((project, index) => (
+          {data.projectData.projects.map((project, index) => (
             <SwiperSlide key={index}>
               <div className="portfolio-item">
                 <div>
