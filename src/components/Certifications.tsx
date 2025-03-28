@@ -2,12 +2,16 @@ import { data } from "./data";
 
 export default function Certifications() {
     return (
-        <div>
+        <div className="col-twelve about-content padding-bottom-3">
             <br/>
             <h3>{data.certificationsData.certificationsTitle}</h3>
-            {data.certificationsData.certifications.map((certification, index) => (
-                <p key={index}>{certification}</p>
-            ))}
+            <ul className="info-list">
+                {data.certificationsData.certifications.map((certification, index) => (
+                    <li key={index}>
+                        <span>{certification}</span>
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 }

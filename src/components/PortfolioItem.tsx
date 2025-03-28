@@ -9,29 +9,33 @@ import 'swiper/css/pagination';
 const swiperConfig = {
     pagination: { clickable: true },
     modules: [Pagination],
+    spaceBetween: 30,
 };
 
 export default function PortfolioItem() {
     return (
-        <Swiper {...swiperConfig} className="mySwiper">
-          {data.projectData.projects.map((project, index) => (
-            <SwiperSlide key={index}>
-              <div className="portfolio-item">
-                <div>
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                  <p>
-                    <center>
-                      <a href={project.link} aria-label="GitHub">
-                        <FontAwesomeIcon className="black" icon={faGithub} size="2x" />
-                      </a>
-                    </center>
-                  </p>
-                  <br></br>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div className="row">
+            <div className="col-twelve">
+                <Swiper {...swiperConfig} className="portfolio-slider">
+                    {data.projectData.projects.map((project, index) => (
+                        <SwiperSlide key={index}>
+                            <div className="portfolio-item">
+                                <div className="item-wrap">
+                                    <div className="portfolio-item-content">
+                                        <h3 className="folio-title">{project.title}</h3>
+                                        <p className="folio-desc">{project.description}</p>
+                                        <div className="folio-links">
+                                            <a href={project.link} className="github-link" aria-label="GitHub">
+                                                <FontAwesomeIcon icon={faGithub} size="2x" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+        </div>
     );
-} 
+}

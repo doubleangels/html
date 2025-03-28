@@ -6,7 +6,6 @@ export default function ContactSection() {
     <section id="contact">
       <div className="row section-intro">
         <h1>{data.contactData.contactTitle}</h1>
-        <h2>{data.contactData.contactDescription}</h2>
         <p className="lead">{data.contactData.contactLead}</p>
       </div>
       <ContactInfo />

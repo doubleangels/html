@@ -7,18 +7,22 @@ import Skills from './Skills';
 
 export default function AboutSection() {
   return (
-    <section id="about">
+    <section id="about" className="center-aligned">
       <Stats />
       <br />
-      <div className="row about">
+      <div className="row" style={{maxWidth: "850px", margin: "0 auto"}}>
         <Profile />
         <Education />
         <Certifications />
         <Skills />
       </div>
-      <div className="row button">
-        <div className="col-twelve">
-          <a href="#contact" title={data.contactData.contactButtonText} className="button stroke smoothscroll">
+      <div className="row button-section">
+        <div className="col-twelve" style={{textAlign: "center"}}>
+          <a 
+            href="#contact" 
+            title={data.contactData.contactButtonText} 
+            className="button stroke"
+          >
             {data.contactData.contactButtonText}
           </a>
         </div>

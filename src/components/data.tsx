@@ -7,8 +7,6 @@ import {
   faBug,
 } from '@fortawesome/free-solid-svg-icons';
 import GithubRepoCount from './GithubRepoCount';
-import Education from './Education';
-
 
 export const data = {
     introData: {
@@ -35,6 +33,7 @@ export const data = {
         ],
     },
     statsData: {
+        statsTitle: "Stats",
         stats: [
             { icon: faHeart, text: 'Passion', content: 1 },
             { icon: faGraduationCap, text: 'Degree', content: 1 },

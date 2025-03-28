@@ -1,18 +1,20 @@
-
-
 import { data } from './data';
 import PortfolioItem from './PortfolioItem';
 
 const PortfolioSection = () => {
   return (
-    <>
-      <section className="portfolio" id="portfolio">
-        <h1 className="portfolio">{data.portfolioData.portfolioTitle}</h1>
-        <h2 className="protfolio-title">{data.portfolioData.portfolioDescription}</h2>
-        <br />
+    <section id="portfolio">
+      <div className="row section-intro">
+        <div className="col-twelve">
+          <h5>{data.portfolioData.portfolioTitle}</h5>
+          <h1>{data.portfolioData.portfolioDescription}</h1>
+        </div>
+      </div>
+      
+      <div className="row portfolio-content">
         <PortfolioItem />
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
