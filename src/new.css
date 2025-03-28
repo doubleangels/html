@@ -1,0 +1,78 @@
+#about {
+    background: #fff;
+    padding: 6rem 0;
+}
+
+/* Layout for the about rows */
+#about .row.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Button row styling */
+#about .row.button {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Button specific styling */
+#about .row.button .button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 2px solid #000;
+    background: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.certifications {
+    padding: 1rem 0;
+    text-align: left;
+    /* adjust alignment as needed */
+}
+
+.certifications h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.certifications p {
+    font-size: 1.6rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+/* Container for the ContactInfo component */
+.contact-info {
+    margin: 4rem auto;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+/* Style each contact item */
+.contact-info .contact-item {
+    padding: 1rem;
+}
+
+/* Heading style for each item */
+.contact-info h5 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #F07;
+}
+
+/* Link style to wrap the icon */
+.contact-info a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Optional: adjust icon size if needed */
+.contact-info a .icon {
+    margin-bottom: 0.5rem;
+}

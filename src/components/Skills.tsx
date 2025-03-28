@@ -3,6 +3,7 @@ import { data } from "./data";
 export default function Skills() {
     return (
         <div className="col-twelve tab-full">
+            <br />
             <h3>{data.skillsData.skillsTitle}</h3>
             <p>{data.skillsData.skillsDescription}</p>
             <ul className="skill-bars">
