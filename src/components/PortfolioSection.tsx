@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { data } from './data';
 
-const Portfolio = () => {
+const PortfolioSection = () => {
   const swiperConfig = {
     pagination: { clickable: true },
     modules: [Pagination],
@@ -43,4 +43,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default PortfolioSection;

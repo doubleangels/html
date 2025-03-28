@@ -131,7 +131,7 @@ export const data = {
     },
     resumeData: {
         resumeTitle: "Resume",
-        resumeDescription: "I have a diverse background in technical support, software development, and cybersecurity. My experience includes roles as a Technical Support Analyst, Cyber Security Analyst, and Freelance Developer. I am passionate about leveraging technology to solve complex problems and enhance user experiences. I am currently pursuing a CCNA certification to further enhance my skills in network architecture and security practices.",
+        resumeDescription: "Throughout my career, I have had the privilege of working on a variety of impactful projects.",
         resume: [
             {
                 "job": "Cyber Security Analyst",

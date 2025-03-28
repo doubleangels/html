@@ -4,7 +4,7 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import AnimationComponent from './Animation';
 import { data } from './data';
 
-export default function Intro() {
+export default function IntroSection() {
   return (
     <section id="intro">
       <div id="canvas-wrap">

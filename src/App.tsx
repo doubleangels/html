@@ -1,20 +1,20 @@
 import { Suspense, lazy } from 'react';
-import Intro from './components/Intro';
+import Intro from './components/IntroSection';
 
-const LazyAbout = lazy(() => import('./components/About'));
-const LazyResume = lazy(() => import('./components/Resume'));
-const LazyPortfolio = lazy(() => import('./components/Portfolio'));
-const LazyContact = lazy(() => import('./components/Contact'));
+const LazyAboutSection = lazy(() => import('./components/AboutSection'));
+const LazyResumeSection = lazy(() => import('./components/ResumeSection'));
+const LazyPortfolioSection = lazy(() => import('./components/PortfolioSection'));
+const LazyContactSection = lazy(() => import('./components/ContactSection'));
 const LazyFooter = lazy(() => import('./components/Footer'));
 
 function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Intro />
-      <LazyAbout />
-      <LazyResume />
-      <LazyPortfolio />
-      <LazyContact />
+      <LazyAboutSection />
+      <LazyResumeSection />
+      <LazyPortfolioSection />
+      <LazyContactSection />
       <LazyFooter />
     </Suspense>
   );

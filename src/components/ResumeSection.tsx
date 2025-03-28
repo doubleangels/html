@@ -1,7 +1,7 @@
-import ResumeItem from "./ResumeItem";
+import ResumeItem from "./ResumeItem.tsx";
 import { data } from "./data.tsx";
 
-export default function Resume() {
+export default function ResumeSection() {
   return (
     <section id="resume">
       <div className="row section-intro">

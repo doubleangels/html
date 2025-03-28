@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { data } from './data.tsx';
 
-export default function Contact() {
+export default function ContactSection() {
   return (
     <section id="contact">
       <div className="row section-intro">
