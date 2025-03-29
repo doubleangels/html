@@ -707,17 +707,6 @@ header .logo a {
   padding-bottom: 1.8rem;
 }
 
-#resume .timeline-content h4::after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 50px;
-  background: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
 #portfolio {
   background: #d3d3d3;
   padding-top: 6rem;
