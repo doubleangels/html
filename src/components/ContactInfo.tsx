@@ -19,7 +19,9 @@ export default function ContactInfo() {
                 )}
               </div>
               <h5>{item.type}</h5>
-              <a href={item.link || '#'} aria-label={`${item.type} me`}/>
+              <a href={item.link || '#'} aria-label={`${item.type}-me`}>
+                <span className='white'>{item.text}</span>
+              </a>
             </div>
           ))}
         </div>
