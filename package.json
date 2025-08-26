@@ -19,7 +19,7 @@
     "react-dom": "^19.1.0",
     "react-fontawesome": "^1.7.1",
     "react-ga4": "^2.1.0",
-    "swiper": "^11.2.8"
+    "swiper": "^11.2.10"
   },
   "devDependencies": {
     "@sentry/vite-plugin": "^3.5.0",
