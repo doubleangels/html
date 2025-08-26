@@ -27,7 +27,7 @@
     "@types/react-dom": "^19.1.6",
     "@types/react-fontawesome": "^1.6.8",
     "@typescript-eslint/parser": "^8.35.0",
-    "@vitejs/plugin-react": "^4.6.0",
+    "@vitejs/plugin-react": "^5.0.1",
     "typescript": "^5.8.3",
     "vite": "^7.0.0",
     "vite-plugin-compression2": "^2.2.0"
