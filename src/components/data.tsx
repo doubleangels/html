@@ -187,8 +187,8 @@ export const data = {
             {
                 "id": "email",
                 "type": "Email",
-                "text": "matt@doubleangels.com",
-                "link": "mailto:matt@doubleangels.com"
+                "text": "matt@doubleangels.dev",
+                "link": "mailto:matt@doubleangels.dev"
             },
             { 
                 "id": "phone",
