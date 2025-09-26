@@ -2,7 +2,7 @@ import { data } from "./data";
 
 export default function Skills() {
     return (
-        <div className="col-twelve tab-full">
+        <div className="col-twelve tab-full" style={{marginTop: "3rem"}}>
             <h3 className="skill-title">{data.skillsData.skillsTitle}</h3>
             <p className="lead">{data.skillsData.skillsDescription}</p>
             

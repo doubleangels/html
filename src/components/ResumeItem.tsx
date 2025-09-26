@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import { memo } from 'react'
 
 interface ResumeItemProps {
@@ -12,9 +10,6 @@ interface ResumeItemProps {
 function ResumeItem({ job, date, company, responsibilities = [] }: ResumeItemProps) {
   return (
     <div className="timeline-block">
-      <div className="timeline-ico">
-        <FontAwesomeIcon icon={faBriefcase} />
-      </div>
       <div className="timeline-header">
         <h3>{job}</h3>
         <p>{date}</p>
