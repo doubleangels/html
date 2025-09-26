@@ -10,15 +10,13 @@ interface ResumeItemProps {
 function ResumeItem({ job, date, company, responsibilities = [] }: ResumeItemProps) {
   return (
     <div className="timeline-block">
-      <div className="timeline-header">
-        <h3>{job}</h3>
-        <p>{date}</p>
-      </div>
       <div className="timeline-content">
-        <h4>{company}</h4>
+        <h3 className="job-title">{job}</h3>
+        <p className="job-date">{date}</p>
+        <h4 className="company-name">{company}</h4>
         <ul className="responsibility-list">
           {responsibilities.map((responsibility, index) => (
-            <li key={index}>{responsibility}</li>
+            <li key={index} className="responsibility-item">{responsibility}</li>
           ))}
         </ul>
       </div>
