@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
@@ -18,8 +19,7 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-fontawesome": "^1.7.1",
-    "react-ga4": "^2.1.0",
-    "swiper": "^11.2.10"
+    "react-ga4": "^2.1.0"
   },
   "devDependencies": {
     "@sentry/vite-plugin": "^3.6.1",
