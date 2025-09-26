@@ -366,7 +366,6 @@ const Animation: React.FC = () => {
       display: 'block',
       willChange: 'transform'
     }}
-    loading="lazy"
   />;
 };
 
