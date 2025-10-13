@@ -243,29 +243,6 @@ input[type="button"] {
   transition: all .3s ease-in-out;
 }
 
-button.stroke,
-.button.stroke {
-  background: #E8B4D1 !important;
-  color: #8B4A6B !important;
-  border: 1px solid #E8B4D1;
-  border-radius: 25px;
-  height: 6rem !important;
-  line-height: 5.4rem !important;
-  padding: 0 3.5rem 0 3rem !important;
-  margin-top: 15px;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  letter-spacing: .25rem;
-  transition: all 0.3s ease;
-}
-
-button.stroke:hover,
-.button.stroke:hover {
-  background: #F0C6D8 !important;
-  border-color: #F0C6D8;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(232, 180, 209, 0.4);
-}
 
 
 #intro {
