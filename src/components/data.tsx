@@ -151,7 +151,6 @@ export const data = {
         ],
     },
     portfolioData: {
-        portfolioTitle: "Portfolio",
         portfolioDescription: "Explore my technical projects showcasing problem-solving capabilities and coding expertise.",
     },
     projectData: {
