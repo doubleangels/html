@@ -16,17 +16,6 @@ export default function AboutSection() {
         <Certifications />
         <Skills />
       </div>
-      <div className="row button-section">
-        <div className="col-twelve" style={{textAlign: "center"}}>
-          <a 
-            href="#contact" 
-            title={data.contactData.contactButtonText} 
-            className="button stroke"
-          >
-            {data.contactData.contactButtonText}
-          </a>
-        </div>
-      </div>
     </section>
   );
 }

@@ -44,8 +44,7 @@ export const data = {
         ],
     },
     profileData: {
-        profileTitle: "Profile",
-        profileDescription: "Cybersecurity analyst and developer with a passion for building secure, efficient solutions:",
+        profileDescription: "I'm a cybersecurity analyst and developer with a passion for building secure, efficient solutions!",
     },
     educationData: {
         educationTitle: "Education",
@@ -75,7 +74,6 @@ export const data = {
         ],
     },
     skillsData: {
-        skillsTitle: "Skills",
         skillsDescription: "My expertise spans multiple technical domains, continuously refined through hands-on experience and dedicated professional development. There's always more to learn!",
         skills: [
             {
@@ -105,13 +103,13 @@ export const data = {
         ],
     },
     resumeData: {
-        resumeTitle: "Experience",
         resumeDescription: "My career journey has equipped me with diverse technical expertise across cybersecurity, support, and development domains.",
         resume: [
             {
                 "job": "Cyber Security Analyst",
                 "date": "April 2022 - Mar 2025",
-                "company": "Open Raven (Los Angeles, CA, USA)",
+                "company": "Open Raven",
+                "location": "Los Angeles, CA, USA",
                 "responsibilities": [
                     "Collaborated with clients on cross-functional security initiatives that strengthened system protection while maintaining operational efficiency.",
                     "Developed comprehensive technical documentation that elevated self-service success rates by standardizing security protocols.",
@@ -121,7 +119,8 @@ export const data = {
             {
                 "job": "Technical Support Analyst III",
                 "date": "January 2022 - April 2022",
-                "company": "ACLU (Denver, CO, USA)",
+                "company": "ACLU",
+                "location": "Denver, CO, USA",
                 "responsibilities": [
                     "Facilitated the resolution of mission-critical technical issues affecting civil liberties advocacy operations regionwide.",
                     "Authored intuitive knowledge base articles that decreased support ticket volume and empowered user independence.",
@@ -131,7 +130,8 @@ export const data = {
             {
                 "job": "Freelance Developer",
                 "date": "November 2016 - Present",
-                "company": "Self-Employed (CO, USA)",
+                "company": "Self-Employed",
+                "location": "CO, USA",
                 "responsibilities": [
                     "Architected and tailored software solutions that transform client requirements into intuitive, high-performance applications, using modern and cuttingedge technologies and stacks.",
                     "Created a privacy-centric Android application achieving 4+ star rating with over 500,000 downloads in a competitive marketplace, boasting a +9% monthlyactive users growth.",
@@ -141,7 +141,8 @@ export const data = {
             {
                 "job": "Warehouse Worker",
                 "date": "April 2019 - March 2020",
-                "company": "Conifer Products, Inc (Grand Junction, CO, USA)",
+                "company": "Conifer Products, Inc",
+                "location": "Grand Junction, CO, USA",
                 "responsibilities": [
                     "Optimized production machinery operations to exceed quality benchmarks while maintaining efficiency standards.",
                     "Executed precise order fulfillment processes with exceptional attention to detail and customer-first prioritization.",
