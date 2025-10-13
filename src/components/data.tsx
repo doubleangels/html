@@ -33,7 +33,6 @@ export const data = {
         ],
     },
     statsData: {
-        statsTitle: "Stats",
         stats: [
             { icon: faHeart, text: 'Passion', content: 1 },
             { icon: faGraduationCap, text: 'Degree', content: 1 },
