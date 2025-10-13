@@ -7,14 +7,14 @@ export default defineConfig({
   plugins: [
     react(),
     compression(),
-    compression({ algorithm: 'brotliCompress', exclude: [/\.(br)$/, /\.(gz)$/], deleteOriginalAssets: false }),
+    compression({ algorithms: ['brotliCompress'], exclude: [/\.(br)$/, /\.(gz)$/], deleteOriginalAssets: false }),
     sentryVitePlugin({
       org: "doubleangels",
       project: "html"
     })
   ],
   build: {
-    sourcemap: true,
+    sourcemap: true, // Re-enable sourcemaps for Sentry error tracking
     rollupOptions: {
       output: {
         manualChunks: (id) => {
@@ -34,7 +34,7 @@ export default defineConfig({
           if (id.includes('@sentry')) {
             return 'sentry';
           }
-          // Animation component (heavy)
+          // Animation component (heavy) - lazy loaded
           if (id.includes('Animation.tsx')) {
             return 'animation';
           }
@@ -55,13 +55,21 @@ export default defineConfig({
     terserOptions: {
       compress: {
         drop_console: true,
-        drop_debugger: true
+        drop_debugger: true,
+        pure_funcs: ['console.log', 'console.info', 'console.debug'] // Remove console logs
+      },
+      mangle: {
+        safari10: true // Better Safari compatibility
       }
     },
     // Cloudflare Pages optimization
-    assetsInlineLimit: 4096, // Inline small assets
+    assetsInlineLimit: 2048, // Reduced from 4096 for better caching
     cssCodeSplit: true, // Split CSS for better caching
-    reportCompressedSize: false // Disable size reporting for faster builds
+    reportCompressedSize: false, // Disable size reporting for faster builds
+    // Performance optimizations
+    commonjsOptions: {
+      include: [/node_modules/]
+    }
   },
   // Optimize dependencies
   optimizeDeps: {
