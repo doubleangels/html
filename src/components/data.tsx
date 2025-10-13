@@ -129,6 +129,16 @@ export const data = {
                 ]
             },
             {
+                "job": "Freelance Developer",
+                "date": "November 2016 - Present",
+                "company": "Self-Employed (CO, USA)",
+                "responsibilities": [
+                    "Architected and tailored software solutions that transform client requirements into intuitive, high-performance applications, using modern and cuttingedge technologies and stacks.",
+                    "Created a privacy-centric Android application achieving 4+ star rating with over 500,000 downloads in a competitive marketplace, boasting a +9% monthlyactive users growth.",
+                    "Engineered and deployed a distributed file-sharing platform that utilized multi-location collaboration workflows, improving file transfer times by 30%.",
+                ]
+            },
+            {
                 "job": "Warehouse Worker",
                 "date": "April 2019 - March 2020",
                 "company": "Conifer Products, Inc (Grand Junction, CO, USA)",
@@ -138,16 +148,6 @@ export const data = {
                     "Streamlined inventory management by implementing barcode scanning technology, effectively reducing stock discrepancies by 25% and improving restocking efficiency by 35%.",
                 ]
             },
-            {
-                "job": "Freelance Developer",
-                "date": "November 2016 - Present",
-                "company": "Self-Employed (CO, USA)",
-                "responsibilities": [
-                    "Architected and tailored software solutions that transform client requirements into intuitive, high-performance applications, using modern and cuttingedge technologies and stacks.",
-                    "Created a privacy-centric Android application achieving 4+ star rating with over 250,000 downloads in a competitive marketplace, boasting a +9% monthlyactive users growth.",
-                    "Engineered and deployed a distributed file-sharing platform that utilized multi-location collaboration workflows, improving file transfer times by 30%.",
-                ]
-            }
         ],
     },
     portfolioData: {
@@ -158,17 +158,17 @@ export const data = {
         projects: [
             {
                 "title": "Redact",
-                "description": "Powerful tool for redacting sensitive information from media files, ensuring data privacy.",
+                "description": "Advanced media redaction tool that automatically detects and removes sensitive information from images and videos, ensuring complete data privacy and compliance.",
                 "link": "https://github.com/doubleangels/redact",
             },
             {
                 "title": "NextDNS Manager",
-                "description": "Privacy-focused Android app enabling on-the-go management of NextDNS configurations with 250k+ satisfied users.",
+                "description": "Popular Android application providing intuitive mobile management of NextDNS configurations, trusted by over 100,000 users for enhanced privacy and security.",
                 "link": "https://github.com/doubleangels/nextdnsmanager",
             },
             {
                 "title": "J3Copy",
-                "description": "Custom real-time file synchronization solution enhancing collaboration across multiple engineering locations.",
+                "description": "Enterprise-grade real-time file synchronization platform designed to streamline collaboration across distributed engineering teams and multiple office locations.",
                 "link": "https://github.com/mtverlee/j3Copy",
             }
         ],
