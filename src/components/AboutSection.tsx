@@ -1,4 +1,3 @@
-import { data } from './data';
 import Stats from './Stats';
 import Profile from './Profile';
 import Education from './Education.tsx';
