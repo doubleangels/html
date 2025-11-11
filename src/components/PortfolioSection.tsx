@@ -6,7 +6,6 @@ const PortfolioSection = () => {
     <section id="portfolio">
       <div className="row section-intro">
         <div className="col-twelve">
-          <h5>{data.portfolioData.portfolioTitle}</h5>
           <h1>{data.portfolioData.portfolioDescription}</h1>
         </div>
       </div>

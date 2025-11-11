@@ -2,9 +2,8 @@ import { data } from "./data";
 
 export default function Skills() {
     return (
-        <div className="col-twelve tab-full">
-            <h3 className="skill-title">{data.skillsData.skillsTitle}</h3>
-            <p className="lead">{data.skillsData.skillsDescription}</p>
+        <div className="col-twelve tab-full" style={{marginTop: "3rem"}}>
+            <h1>{data.skillsData.skillsDescription}</h1>
             
             <ul className="skill-bars">
                 {data.skillsData.skills.map((skill) => (

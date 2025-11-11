@@ -1,4 +1,22 @@
+# Security and Performance Headers
 /*
-  Access-Control-Allow-Origin: *
-  X-Robots-Tag: all
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  
+  Alt-Svc: h3=":443"; ma=86400
+  Alt-Svc: h3-29=":443"; ma=86400
+  Alt-Svc: h3-28=":443"; ma=86400
+  Alt-Svc: h3-27=":443"; ma=86400
+
+/assets/*
+  X-Content-Type-Options: nosniff
+
+/*.html
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+
+/api/*
   X-Content-Type-Options: nosniff
