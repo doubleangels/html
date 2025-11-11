@@ -32,11 +32,11 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: 'latest'
+          node-version: "latest"
           cache: "npm"
 
-      - name: Install dependencies
-        run: npm install
+      - name: Clean install
+        run: npm ci
 
       - name: Lint
         run: npm run lint --if-present
@@ -76,4 +76,3 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           pull-request-number: ${{ github.event.pull_request.number }}
           merge-method: merge
-
