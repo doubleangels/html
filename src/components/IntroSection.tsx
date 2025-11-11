@@ -1,11 +1,15 @@
 import { data } from './data';
-import Animation from './Animation';
+import { lazy, Suspense } from 'react';
 import SocialInfo from './SocialInfo';
+
+const Animation = lazy(() => import('./Animation'));
 
 export default function IntroSection() {
   return (
     <section id="intro">
-      <Animation />
+      <Suspense fallback={<div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: '#000' }} />}>
+        <Animation />
+      </Suspense>
       <div className="intro-content">
         <div className="row">
           <div className="col-twelve">

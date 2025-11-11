@@ -67,6 +67,9 @@ const Animation: React.FC = () => {
   // Reference to the current animation frame ID for cancellation
   const frameRef = useRef<number>(0);
   
+  // Animation pause state
+  const isPausedRef = useRef<boolean>(false);
+  
   // Animation configuration settings
   const confRef = useRef<Config>({
     hue: 5,          // Reddish base hue
@@ -232,12 +235,33 @@ const Animation: React.FC = () => {
   }, [distSq]);
 
   /**
+   * Pause the animation to save CPU when not visible
+   */
+  const pauseAnimation = useCallback(() => {
+    isPausedRef.current = true;
+    if (frameRef.current) {
+      cancelAnimationFrame(frameRef.current);
+      frameRef.current = 0;
+    }
+  }, []);
+
+  /**
+   * Resume the animation when visible again
+   */
+  const resumeAnimation = useCallback(() => {
+    if (isPausedRef.current) {
+      isPausedRef.current = false;
+      frameRef.current = requestAnimationFrame(render);
+    }
+  }, []);
+
+  /**
    * Main rendering function that draws a single frame of animation.
    * Uses requestAnimationFrame for smooth rendering.
    */
   const render = useCallback(() => {
     const ctx = ctxRef.current;
-    if (!ctx) return;
+    if (!ctx || isPausedRef.current) return;
     
     const { w, h } = canvasSize.current;
     
@@ -310,7 +334,19 @@ const Animation: React.FC = () => {
         updateBgDots();
       }
     };
+
+    // Handle visibility change to pause/resume animation
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        pauseAnimation();
+      } else {
+        resumeAnimation();
+      }
+    };
+
+    // Add event listeners
     window.addEventListener('resize', handleResize);
+    document.addEventListener('visibilitychange', handleVisibilityChange);
     
     // Start the animation loop
     frameRef.current = requestAnimationFrame(render);
@@ -318,12 +354,19 @@ const Animation: React.FC = () => {
     // Clean up event listeners and animation frame on unmount
     return () => {
       window.removeEventListener('resize', handleResize);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
       cancelAnimationFrame(frameRef.current);
     };
-  }, [initCanvas, updateBgDots, render]);
+  }, [initCanvas, updateBgDots, render, pauseAnimation]);
 
   // Render a fullscreen canvas element
-  return <canvas ref={canvasRef} style={{ display: 'block' }} />;
+  return <canvas 
+    ref={canvasRef} 
+    style={{ 
+      display: 'block',
+      willChange: 'transform'
+    }}
+  />;
 };
 
 // Use memo to prevent unnecessary re-renders
