@@ -33,7 +33,6 @@ export const data = {
         ],
     },
     statsData: {
-        statsTitle: "Stats",
         stats: [
             { icon: faHeart, text: 'Passion', content: 1 },
             { icon: faGraduationCap, text: 'Degree', content: 1 },
@@ -44,8 +43,7 @@ export const data = {
         ],
     },
     profileData: {
-        profileTitle: "Profile",
-        profileDescription: "Cybersecurity analyst and developer with a passion for building secure, efficient solutions:",
+        profileDescription: "I'm a cybersecurity analyst and developer with a passion for building secure, efficient solutions!",
     },
     educationData: {
         educationTitle: "Education",
@@ -75,7 +73,6 @@ export const data = {
         ],
     },
     skillsData: {
-        skillsTitle: "Skills",
         skillsDescription: "My expertise spans multiple technical domains, continuously refined through hands-on experience and dedicated professional development. There's always more to learn!",
         skills: [
             {
@@ -105,13 +102,13 @@ export const data = {
         ],
     },
     resumeData: {
-        resumeTitle: "Experience",
         resumeDescription: "My career journey has equipped me with diverse technical expertise across cybersecurity, support, and development domains.",
         resume: [
             {
                 "job": "Cyber Security Analyst",
                 "date": "April 2022 - Mar 2025",
-                "company": "Open Raven (Los Angeles, CA, USA)",
+                "company": "Open Raven",
+                "location": "Los Angeles, CA, USA",
                 "responsibilities": [
                     "Collaborated with clients on cross-functional security initiatives that strengthened system protection while maintaining operational efficiency.",
                     "Developed comprehensive technical documentation that elevated self-service success rates by standardizing security protocols.",
@@ -121,7 +118,8 @@ export const data = {
             {
                 "job": "Technical Support Analyst III",
                 "date": "January 2022 - April 2022",
-                "company": "ACLU (Denver, CO, USA)",
+                "company": "ACLU",
+                "location": "Denver, CO, USA",
                 "responsibilities": [
                     "Facilitated the resolution of mission-critical technical issues affecting civil liberties advocacy operations regionwide.",
                     "Authored intuitive knowledge base articles that decreased support ticket volume and empowered user independence.",
@@ -129,46 +127,47 @@ export const data = {
                 ]
             },
             {
+                "job": "Freelance Developer",
+                "date": "November 2016 - Present",
+                "company": "Self-Employed",
+                "location": "CO, USA",
+                "responsibilities": [
+                    "Architected and tailored software solutions that transform client requirements into intuitive, high-performance applications, using modern and cuttingedge technologies and stacks.",
+                    "Created a privacy-centric Android application achieving 4+ star rating with over 500,000 downloads in a competitive marketplace, boasting a +9% monthlyactive users growth.",
+                    "Engineered and deployed a distributed file-sharing platform that utilized multi-location collaboration workflows, improving file transfer times by 30%.",
+                ]
+            },
+            {
                 "job": "Warehouse Worker",
                 "date": "April 2019 - March 2020",
-                "company": "Conifer Products, Inc (Grand Junction, CO, USA)",
+                "company": "Conifer Products, Inc",
+                "location": "Grand Junction, CO, USA",
                 "responsibilities": [
                     "Optimized production machinery operations to exceed quality benchmarks while maintaining efficiency standards.",
                     "Executed precise order fulfillment processes with exceptional attention to detail and customer-first prioritization.",
                     "Streamlined inventory management by implementing barcode scanning technology, effectively reducing stock discrepancies by 25% and improving restocking efficiency by 35%.",
                 ]
             },
-            {
-                "job": "Freelance Developer",
-                "date": "November 2016 - Present",
-                "company": "Self-Employed (CO, USA)",
-                "responsibilities": [
-                    "Architected and tailored software solutions that transform client requirements into intuitive, high-performance applications, using modern and cuttingedge technologies and stacks.",
-                    "Created a privacy-centric Android application achieving 4+ star rating with over 250,000 downloads in a competitive marketplace, boasting a +9% monthlyactive users growth.",
-                    "Engineered and deployed a distributed file-sharing platform that utilized multi-location collaboration workflows, improving file transfer times by 30%.",
-                ]
-            }
         ],
     },
     portfolioData: {
-        portfolioTitle: "Portfolio",
         portfolioDescription: "Explore my technical projects showcasing problem-solving capabilities and coding expertise.",
     },
     projectData: {
         projects: [
             {
                 "title": "Redact",
-                "description": "Powerful tool for redacting sensitive information from media files, ensuring data privacy.",
+                "description": "Advanced media redaction tool that automatically detects and removes sensitive information from images and videos, ensuring complete data privacy and compliance.",
                 "link": "https://github.com/doubleangels/redact",
             },
             {
                 "title": "NextDNS Manager",
-                "description": "Privacy-focused Android app enabling on-the-go management of NextDNS configurations with 250k+ satisfied users.",
+                "description": "Popular Android application providing intuitive mobile management of NextDNS configurations, trusted by over 100,000 users for enhanced privacy and security.",
                 "link": "https://github.com/doubleangels/nextdnsmanager",
             },
             {
                 "title": "J3Copy",
-                "description": "Custom real-time file synchronization solution enhancing collaboration across multiple engineering locations.",
+                "description": "Enterprise-grade real-time file synchronization platform designed to streamline collaboration across distributed engineering teams and multiple office locations.",
                 "link": "https://github.com/mtverlee/j3Copy",
             }
         ],
@@ -187,8 +186,8 @@ export const data = {
             {
                 "id": "email",
                 "type": "Email",
-                "text": "matt@doubleangels.com",
-                "link": "mailto:matt@doubleangels.com"
+                "text": "matt@doubleangels.dev",
+                "link": "mailto:matt@doubleangels.dev"
             },
             { 
                 "id": "phone",

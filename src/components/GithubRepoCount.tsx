@@ -90,6 +90,18 @@ const GithubRepoCount: React.FC<GithubRepoCountProps> = ({
         let page = 1;
         let hasMorePages = true;
         
+        // Try Cloudflare Pages Function first for better performance
+        try {
+          const cloudflareResponse = await fetch('/api/github-repos');
+          if (cloudflareResponse.ok) {
+            const data = await cloudflareResponse.json();
+            setRepoCount(data.count);
+            return;
+          }
+        } catch (cloudflareError) {
+          console.log('Cloudflare function not available, falling back to GitHub API');
+        }
+
         // Continue fetching pages until we've retrieved all repositories
         // GitHub API paginates results, with max 100 items per page
         while (hasMorePages) {

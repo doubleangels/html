@@ -6,7 +6,6 @@ export default function ResumeSection() {
     <section id="resume" className="grey-section">
       <div className="row section-intro">
         <div className="col-twelve">
-          <h5>{data.resumeData.resumeTitle}</h5>
           <h1>{data.resumeData.resumeDescription}</h1>
         </div>
       </div>

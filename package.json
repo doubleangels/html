@@ -5,31 +5,31 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/fontawesome-svg-core": "^7.0.0",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "@sentry/react": "^9.32.0",
-    "@sentry/webpack-plugin": "^3.5.0",
+    "@fortawesome/react-fontawesome": "^0.2.6",
+    "@sentry/react": "^9.46.0",
+    "@sentry/webpack-plugin": "^4.6.0",
     "babel-plugin-macros": "^3.1.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "react-fontawesome": "^1.7.1",
-    "react-ga4": "^2.1.0",
-    "swiper": "^11.2.10"
+    "react-ga4": "^2.1.0"
   },
   "devDependencies": {
-    "@sentry/vite-plugin": "^3.5.0",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
+    "@sentry/vite-plugin": "^3.6.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
     "@types/react-fontawesome": "^1.6.8",
-    "@typescript-eslint/parser": "^8.35.0",
-    "@vitejs/plugin-react": "^4.6.0",
-    "typescript": "^5.8.3",
-    "vite": "^7.1.2",
-    "vite-plugin-compression2": "^2.2.0"
+    "@typescript-eslint/parser": "^8.46.1",
+    "@vitejs/plugin-react": "^5.1.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9",
+    "vite-plugin-compression2": "^2.3.0"
   }
 }
