@@ -23,11 +23,11 @@
   },
   "devDependencies": {
     "@sentry/vite-plugin": "^4.6.0",
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
     "@types/react-fontawesome": "^1.6.8",
-    "@typescript-eslint/parser": "^8.46.1",
-    "@vitejs/plugin-react": "^5.1.0",
+    "@typescript-eslint/parser": "^8.47.0",
+    "@vitejs/plugin-react": "^5.1.1",
     "typescript": "^5.9.3",
     "vite": "^7.2.2",
     "vite-plugin-compression2": "^2.3.1"
